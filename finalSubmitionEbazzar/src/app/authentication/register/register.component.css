@@ -1,0 +1,40 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    text-align: center;
+    color: crimson;
+}
+
+.wraper {
+    margin: 1px;
+    padding: 1px;
+    background-image: url('/assets/registration-page-background-images-12.jpg');
+}
+
+nav a {
+    text-decoration: none;
+    color: blue;
+}
+
+nav a:hover {
+    background-color: aqua;
+    color: #000;
+}
+
+#a1 {
+    float: right;
+    padding: 10px;
+}
+
+.formgroup {
+    margin: 5% 35%;
+}
+
+.button {
+    color: blueviolet;
+    padding: 5px;
+    margin-left: 80px;
+}

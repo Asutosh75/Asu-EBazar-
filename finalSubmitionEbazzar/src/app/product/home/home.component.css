@@ -1,0 +1,27 @@
+/* .example-container {
+    width: auto;
+    height: auto;
+    margin: 10px;
+    border: 10px solid #555;
+} */
+
+mat-sidenav-content {
+    height: 100%;
+    border: 2px solid blue;
+}
+
+mat-sidenav-content,
+mat-sidenav {
+    padding: 20px;
+}
+
+mat-sidenav {
+    width: 300px;
+    height: 100%;
+    border: 2px solid blue;
+}
+
+.wraper {
+    padding: 1px;
+    margin: 1px;
+}

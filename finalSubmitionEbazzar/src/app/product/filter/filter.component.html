@@ -1,0 +1,62 @@
+<div class="wraper">
+    <!-- <div class="catgories">
+        <ul>
+            <li><strong>Category</strong>
+                <ul>
+                    <li *ngFor="let i of listCatogories">
+                        <mat-checkbox>{{i}}</mat-checkbox>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div> -->
+    <div class="catgories">
+        <h2><strong>Category</strong></h2>
+        <form [formGroup]="selectBox">
+            <select name="Category" formControlName="select">
+            <!-- <option selected>ProductList</option> -->
+            <option *ngFor="let i of listCatogories" [value]="i">{{i}}</option>
+         </select>
+            <h3>Price</h3>
+            <p>Min</p>
+            <input type="range" min="1" max="40000" formControlName="Range">
+            <p>Max</p>
+            <h2>review</h2>
+
+            <i *ngFor="let i of [1,2,3,4,5]" class="material-icons" style=color:orange>star_border{{i}}</i><br>
+            <i *ngFor="let i of [1,2,3,4,5]" class="material-icons" style=color:orange>star_border{{i}}</i><br>
+            <i *ngFor="let i of [1,2,3,4,5]" class="material-icons" style=color:orange>star_border{{i}}</i><br>
+            <i *ngFor="let i of [1,2,3,4,5]" class="material-icons" style=color:orange>star_border{{i}}</i><br>
+            <i *ngFor="let i of [1,2,3,4,5]" class="material-icons" style=color:orange>star_border{{i}}</i>
+
+        </form>
+    </div>
+
+    <!-- <div class="price">
+        <ul>
+            <li><strong>Price</strong>
+                <ul>
+                    <li>
+                        Min
+                        <mat-slider min="100" max="40000" step="0.5" value="1.5"></mat-slider>
+                        Max
+                    </li>
+                </ul>
+
+        </ul>
+    </div> -->
+
+    <!-- <div class="rateing">
+        <ul>
+            <li><strong>Rateing</strong>
+                <ul>
+                    <li><i *ngFor="let i of [1,2,3,4,5]" class="material-icons" style=color:orange>star_border{{i}}</i></li>
+                    <li><i *ngFor="let i of [1,2,3,4,5]" class="material-icons" style=color:orange>star_border{{i}}</i></li>
+                    <li><i *ngFor="let i of [1,2,3,4,5]" class="material-icons" style=color:orange>star_border{{i}}</i></li>
+                    <li><i *ngFor="let i of [1,2,3,4,5]" class="material-icons" style=color:orange>star_border{{i}}</i></li>
+                    <li><i *ngFor="let i of [1,2,3,4,5]" class="material-icons" style=color:orange>star_border{{i}}</i></li>
+                </ul>
+        </ul>
+    </div> -->
+
+</div>

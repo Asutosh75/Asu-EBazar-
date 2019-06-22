@@ -1,0 +1,71 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.wraper {
+    margin: 30px;
+}
+
+.card {
+    padding: 10px;
+    height: 20px;
+    background-color: cornsilk;
+}
+
+ul li {
+    list-style-type: none;
+    display: inline;
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(255, 174, 0);
+}
+
+#li1 {
+    float: left;
+}
+
+#li2 {
+    float: right;
+    font-size: 13px;
+}
+
+.contain {
+    padding: 20px;
+    margin: 20px;
+}
+
+.productResult {
+    padding: 5px;
+    margin: 5px;
+    height: 100px;
+    width: 50%;
+    display: table-cell;
+}
+
+th,
+td {
+    padding: 3px;
+    text-align: center;
+}
+
+.oneline {
+    display: inline-block;
+    /* padding-right: 29px;
+    padding-left: 40px; */
+}
+
+.matcard {
+    height: 50px;
+    width: 80px;
+}
+
+.mat-elevation-z8 {
+    width: 100%;
+}
+
+.button {
+    margin-left: 70%;
+}

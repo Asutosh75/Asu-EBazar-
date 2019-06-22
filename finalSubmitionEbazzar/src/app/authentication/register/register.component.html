@@ -1,0 +1,47 @@
+<div class="wraper">
+
+    <header>
+        <h1>Registion Page</h1>
+    </header>
+    <nav>
+        <!-- <a href="#">Home</a> -->
+        <!-- <a id=a1 href="#">LogOut</a> -->
+        <!-- <a id=a1 href="#">Login</a> -->
+    </nav>
+
+    <div class="formgroup">
+        <mat-card>
+            <form [formGroup]="myform" (submit)="submitmyform()">
+                <mat-form-field appearance="fill">
+                    <mat-label>Name</mat-label>
+                    <input matInput placeholder="Name" formControlName="name" required>
+                    <!-- <span *ngIf="name.hasError('required') && name.dirty">Name required</span> -->
+                </mat-form-field>
+                <mat-form-field appearance="fill">
+                    <mat-label>Email</mat-label>
+                    <input matInput placeholder="Email" formControlName="email" required>
+                    <!-- <span *ngIf="email.hasError('required') &&email.dirty">email required</span> -->
+                </mat-form-field>
+                <mat-form-field appearance="fill">
+                    <mat-label>Password</mat-label>
+                    <input matInput placeholder="Password" formControlName="pwd" required>
+                    <!-- <span *ngIf="pwd.hasError('required') && pwd.dirty">Password required</span> -->
+                </mat-form-field>
+                <mat-form-field appearance="fill">
+                    <mat-label>Re-password</mat-label>
+                    <input matInput placeholder="Re-password" formControlName="repwd" required>
+                    <!-- <span *ngIf="repwd.hasError('required') && repwd.dirty">Re-passsword required</span> -->
+                </mat-form-field>
+                <mat-form-field appearance="fill">
+                    <mat-label>Phone-Number</mat-label>
+                    <input matInput placeholder="Number" formControlName="number" required>
+                    <!-- <span *ngIf="number.hasError('required') && number.dirty">Number required</span> -->
+                </mat-form-field>
+                <div class="button">
+                    <button mat-raised-button color="accent" [disabled]="!myform.valid">Register</button>
+                </div>
+
+            </form>
+        </mat-card>
+    </div>
+</div>

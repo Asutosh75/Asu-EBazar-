@@ -1,0 +1,105 @@
+<div class="wraper">
+
+    <div class="card">
+        <ul>
+            <li id="li1"><a routerLink="/home">E'BAZZAR</a></li>
+            <li id="li2">
+                <a routerLink="/login">Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="contain">
+        <nav>
+            <ul>
+                <li>
+                    <input matInput [(ngModel)]="term" placeholder="Search ByProduct Or category....">&nbsp;&nbsp;
+                    <span><button color="warn" mat-raised-button (click)="searchProduct()">Search</button></span>
+                </li>
+
+                <li id="li2">
+                    <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+                        <mat-button-toggle value="bold" style="background-color:rgb(55, 0, 255);color:whitesmoke" (click)="sortDec()">
+                            <i class="material-icons" style=color:orange>keyboard_arrow_down</i>Price
+                        </mat-button-toggle>
+                        <mat-button-toggle value="bold" style="background-color:rgb(55, 0, 255);color:whitesmoke" (click)="sortAsc()">
+                            <i class="material-icons" style=color:orange>keyboard_arrow_up</i>Price
+                        </mat-button-toggle>
+                        <mat-button-toggle value="bold" style="background-color:rgb(55, 0, 255);color:whitesmoke" (click)="RevAsc()">
+                            <i class="material-icons" style=color:orange>keyboard_arrow_up</i>rating
+                        </mat-button-toggle>
+                        <mat-button-toggle value="bold" style="background-color:rgb(55, 0, 255);color:whitesmoke" (click)="RevDec()">
+                            <i class="material-icons" style=color:orange>keyboard_arrow_down</i>rating
+                        </mat-button-toggle>
+                    </mat-button-toggle-group>
+                    &nbsp;
+
+                    <a routerLink="/cart"> <button mat-raised-button color="warn"><i class="material-icons">shopping_cart</i>
+                    <span style="background-color: rgb(55, 0, 255);display:inline-block; width:25px; border-radius: 50%;height: 22px;padding-bottom :9px;text-align: center " >{{item}}</span>
+                </button></a>
+
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+    <div class="productResult">
+
+        <div *ngFor="let list of pro">
+
+            <mat-card style="float:left ;margin:2px;">
+
+                <table>
+                    <i class=" material-icons " style="font-size:70px;color:orange;margin-bottom: 70px ">explore</i>
+                    <span class="oneline ">
+                        <tr>
+                            <th><strong>ID </strong></th>
+                            <td>{{list.id}}</td>
+                        </tr>
+                        <tr>
+                            <th><strong>productDiscription </strong></th>
+                            <td>{{list.productDiscription}}</td>
+
+                        </tr>
+                        <tr>
+                            <th><strong>category </strong></th>
+                            <td>{{list.category}}</td>
+                        </tr>
+                        <tr>
+                            <th><strong>price </strong></th>
+                            <td>{{list.price}}</td>
+                        </tr>
+
+                    </span>
+                    <span class="oneline ">
+                        <tr>
+                            <th>venderId </th>
+                            <td>{{list.vendorId}}</td>
+                        </tr>
+                        
+                        <tr>
+                            <th>quantity </th>
+                            <td>{{list.quantity}}</td>
+                        </tr>
+                        <tr>
+                            <th>rateing </th>
+                            <td>{{list.rateing}}</td>
+                        </tr>
+
+
+                    </span>
+                    <div class="button">
+                        <button mat-raised-button color="primary" (click)="AddtoCart(list)"><i class="material-icons">shopping_cart</i>Add</button>
+                        <h3>{{list.price | currency: 'INR':true}}</h3>
+                    </div>
+                </table>
+
+            </mat-card>
+
+        </div>
+        <!-- </table> -->
+
+    </div>
+
+
+
+</div>

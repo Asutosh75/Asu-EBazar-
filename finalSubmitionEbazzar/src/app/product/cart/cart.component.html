@@ -1,0 +1,51 @@
+<h1>Carts Items</h1>
+<div>
+    <div *ngFor="let list of items">
+
+        <mat-card style="float:left ;margin:2px;">
+
+            <table>
+                <i class=" material-icons " style="font-size:70px;color:orange;margin-bottom: 70px ">explore</i>
+                <span class="oneline ">
+                            <tr>
+                                <th><strong>ID </strong></th>
+                                <td>{{list.id}}</td>
+                            </tr>
+                            <tr>
+                                <th><strong>productDiscription </strong></th>
+                                <td>{{list.productDiscription}}</td>
+    
+                            </tr>
+                            <tr>
+                                <th><strong>category </strong></th>
+                                <td>{{list.category}}</td>
+                            </tr>
+                            <tr>
+                                <th><strong>price </strong></th>
+                                <td>{{list.price}}</td>
+                            </tr>
+    
+                        </span>
+                <span class="oneline ">
+                            <tr>
+                                <th>venderId </th>
+                                <td>{{list.vendorId}}</td>
+                            </tr>
+                            
+                            <tr>
+                                <th>quantity </th>
+                                <td>{{list.quantity}}</td>
+                            </tr>
+                            <tr>
+                                <th>rateing </th>
+                                <td>{{list.rateing}}</td>
+                            </tr>
+    
+    
+                        </span>
+
+            </table>
+
+        </mat-card>
+
+    </div>

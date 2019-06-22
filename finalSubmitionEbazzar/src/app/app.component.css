@@ -1,0 +1,31 @@
+body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    background-color: seagreen;
+    height: 60px;
+    padding-top: 13px;
+    font-size: 30px;
+}
+
+.container a:hover {
+    background-color: lightseagreen;
+    color: darkred;
+}
+
+.container a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+
+/*
+.main-container {
+    background-image: url(../assets/image1.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-size: cover;
+} */
